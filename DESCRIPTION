@@ -1,8 +1,19 @@
 Package: gov50tutor
 Type: Package
 Version: 0.1.0.9003
+<<<<<<< HEAD
 Title: Learnr tutorials for Government 50 at Harvard University
 Description: A series of 'learnr' tutorials on basic data analysis to help students in Gov 50 at Harvard.
+=======
++<<<<<<< HEAD
+Title: Learnr tutorials for Intro Stat class
+Description: A series of 'learnr' tutorials on basic data analysis.
+
+=======
+Title: Learnr tutorials for TPDstat
+Description: A series of 'learnr' tutorials on basic data analysis 
+>>>>>>> 49e184908a6e2fe98f591c9ddc391ffb7e8fea4d
+>>>>>>> 65e83fabd9a2a6a99e3483121dcd9dc7fa2f66b8
 Authors@R:
   c(person(given = "Matthew",
            family = "Blackwell",
