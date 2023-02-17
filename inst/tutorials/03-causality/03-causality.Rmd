@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 title: "TPD Tutorial 3: Causality and Pivoting"
+=======
+title: "TPDstat Tutorial 3: Causality and Pivoting"
+>>>>>>> 49e184908a6e2fe98f591c9ddc391ffb7e8fea4d
 tutorial:
   id: "03-causality"
 output:
@@ -28,7 +32,7 @@ library(nycflights13)
 flights <- flights |> filter(month == 6)
 tutorial_options(exercise.checker = gradethis::grade_learnr)
 knitr::opts_chunk$set(echo = TRUE)
-tut_reptitle <- "Gov 50 Tutorial 3: Output Report"
+tut_reptitle <- "TPDstat Tutorial 3: Output Report"
 
 data(resume, package = "qss")
 resume <- as_tibble(resume) |>
@@ -297,9 +301,9 @@ grade_this({
 ## Submit
 
 ```{r context="setup", echo = FALSE}
-gov50tutor::submission_ui
+TPDtutor::submission_ui
 ```
 
 ```{r context="server", echo = FALSE}
-gov50tutor::submission_server()
+TPDtutor::submission_server()
 ```

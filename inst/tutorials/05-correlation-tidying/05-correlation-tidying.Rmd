@@ -1,5 +1,5 @@
 ---
-title: "Gov 50 Tutorial 5: Correlation, z-scores, and tidying data"
+title: "TPDstat Tutorial 5: Correlation, z-scores, and tidying data"
 tutorial:
   id: "05-correlation-tidying"
 output:
@@ -17,18 +17,18 @@ description: "This tutorial will introduce you to correlation and tidying data."
  
 
 ```{r setup, include=FALSE}
-# file.path(find.package('gov50tutor'), 'tutorials', 'tutorial.css')
+# file.path(find.package('TPDtutor'), 'tutorials', 'tutorial.css')
 library(gradethis)
 library(learnr)
 library(ggplot2)
 library(dplyr)
-library(gov50tutor)
+library(TPDtutor)
 library(tidyverse)
-library(gov50data)
+library(TPDdata)
 
 tutorial_options(exercise.checker = gradethis::grade_learnr)
 knitr::opts_chunk$set(echo = TRUE)
-tut_reptitle <- "Gov 50 Tutorial 5: Output Report"
+tut_reptitle <- "TPDstat Tutorial 5: Output Report"
 
 library(gapminder)
 ```
@@ -322,9 +322,9 @@ grade_this_code()
 ## Submit
 
 ```{r context="setup", echo = FALSE}
-gov50tutor::submission_ui
+TPDtutor::submission_ui
 ```
 
 ```{r context="server", echo = FALSE}
-gov50tutor::submission_server()
+TPDtutor::submission_server()
 ```
