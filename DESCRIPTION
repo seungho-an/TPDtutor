@@ -3,6 +3,7 @@ Type: Package
 Version: 0.1.0.9003
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Title: Learnr tutorials for Intro Stat class
 Description: A series of 'learnr' tutorials on basic data analysis.
 
@@ -10,6 +11,10 @@ Description: A series of 'learnr' tutorials on basic data analysis.
 Title: Learnr tutorials for TPDstat
 Description: A series of 'learnr' tutorials on basic data analysis 
 >>>>>>> 49e184908a6e2fe98f591c9ddc391ffb7e8fea4d
+=======
+Title: Learnr tutorials for Government 50 at Harvard University
+Description: A series of 'learnr' tutorials on basic data analysis to help students in Gov 50 at Harvard.
+>>>>>>> parent of d889dca (Update DESCRIPTION)
 =======
 Title: Learnr tutorials for Government 50 at Harvard University
 Description: A series of 'learnr' tutorials on basic data analysis to help students in Gov 50 at Harvard.
