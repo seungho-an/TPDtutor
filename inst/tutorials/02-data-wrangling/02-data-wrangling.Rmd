@@ -1,5 +1,5 @@
 ---
-title: "Gov 50 Tutorial 2: Data Wrangling"
+title: "TPDstat Tutorial 2: Data Wrangling"
 tutorial:
   id: "02-data-wrangling"
 output:
@@ -17,17 +17,17 @@ description: "This tutorial will introduce you to data wrangling with dplyr"
  
 
 ```{r setup, include=FALSE}
-# file.path(find.package('gov50tutor'), 'tutorials', 'tutorial.css')
+# file.path(find.package('TPDtutor'), 'tutorials', 'tutorial.css')
 library(gradethis)
 library(learnr)
 library(ggplot2)
 library(dplyr)
-library(gov50tutor)
+library(TPDtutor)
 library(nycflights13)
 flights <- flights |> filter(month == 6)
 tutorial_options(exercise.checker = gradethis::grade_learnr)
 knitr::opts_chunk$set(echo = TRUE)
-tut_reptitle <- "Gov 50 Tutorial 2: Output Report"
+tut_reptitle <- "TPDstat Tutorial 2: Output Report"
 ```
 
 ## Nesting functions
@@ -328,9 +328,9 @@ gradethis::grade_this_code()
 ## Submit
 
 ```{r context="setup", echo = FALSE}
-gov50tutor::submission_ui
+TPDtutor::submission_ui
 ```
 
 ```{r context="server", echo = FALSE}
-gov50tutor::submission_server()
+TPDtutor::submission_server()
 ```
