@@ -1,8 +1,9 @@
 Package: TPDtutor
 Type: Package
 Version: 0.1.0.9003
-Title: Learnr tutorials for Government 50 at Harvard University
-Description: A series of 'learnr' tutorials on basic data analysis to help students in Gov 50 at Harvard.
+Title: Learnr tutorials for Intro Stat class
+Description: A series of 'learnr' tutorials on basic data analysis.
+
 Authors@R:
   c(person(given = "Seung-Ho",
            family = "An",

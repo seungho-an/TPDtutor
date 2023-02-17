@@ -1,5 +1,5 @@
 ---
-title: "Gov 50 Tutorial 3: Causality and Pivoting"
+title: "TPD Tutorial 3: Causality and Pivoting"
 tutorial:
   id: "03-causality"
 output:
@@ -17,12 +17,12 @@ description: "This tutorial will introduce you to making cross tabs, pivoting, a
  
 
 ```{r setup, include=FALSE}
-# file.path(find.package('gov50tutor'), 'tutorials', 'tutorial.css')
+# file.path(find.package('TPDtutor'), 'tutorials', 'tutorial.css')
 library(gradethis)
 library(learnr)
 library(ggplot2)
 library(dplyr)
-library(gov50tutor)
+library(TPDtutor)
 library(tidyverse)
 library(nycflights13)
 flights <- flights |> filter(month == 6)
