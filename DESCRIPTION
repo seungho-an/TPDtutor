@@ -1,34 +1,13 @@
-Package: TPDtutor
+Package: gov50tutor
 Type: Package
 Version: 0.1.0.9003
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-Title: Learnr tutorials for Intro Stat class
-Description: A series of 'learnr' tutorials on basic data analysis.
-
-=======
-Title: Learnr tutorials for TPDstat
-Description: A series of 'learnr' tutorials on basic data analysis 
->>>>>>> 49e184908a6e2fe98f591c9ddc391ffb7e8fea4d
-=======
 Title: Learnr tutorials for Government 50 at Harvard University
 Description: A series of 'learnr' tutorials on basic data analysis to help students in Gov 50 at Harvard.
->>>>>>> parent of d889dca (Update DESCRIPTION)
-=======
-Title: Learnr tutorials for Government 50 at Harvard University
-Description: A series of 'learnr' tutorials on basic data analysis to help students in Gov 50 at Harvard.
->>>>>>> parent of d889dca (Update DESCRIPTION)
-=======
-Title: Learnr tutorials for Government 50 at Harvard University
-Description: A series of 'learnr' tutorials on basic data analysis to help students in Gov 50 at Harvard.
->>>>>>> parent of d889dca (Update DESCRIPTION)
 Authors@R:
-  c(person(given = "Seung-Ho",
-           family = "An",
+  c(person(given = "Matthew",
+           family = "Blackwell",
            role = c("aut", "cre"),
-           email = "seunghoan@arizona.edu"))
+           email = "mblackwell@gov.harvard.edu"))
 Depends:
   R (>= 3.6.0)
 Imports:
@@ -41,6 +20,6 @@ Imports:
   qss,
   here
 License: GPL-3
-URL: https://github.com/seungho-an/TPDtutor
-BugReports: https://github.com/seungho-an/TPDtutor/issues
+URL: https://github.com/mattblackwell/gov50tutor
+BugReports: https://github.com/mattblackwell/gov50tutor/issues
 RoxygenNote: 7.0.2
