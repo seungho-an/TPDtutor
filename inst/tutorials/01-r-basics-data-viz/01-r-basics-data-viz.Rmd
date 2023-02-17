@@ -1,5 +1,5 @@
 ---
-title: "TPD Tutorial 1: R Basics & Data Visualization"
+title: "TPDstat Tutorial 1: R Basics & Data Visualization"
 tutorial:
   id: "01-r-basics-data-viz"
 output:
