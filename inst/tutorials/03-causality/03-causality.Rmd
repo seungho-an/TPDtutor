@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
 title: "TPD Tutorial 3: Causality and Pivoting"
-=======
 title: "TPDstat Tutorial 3: Causality and Pivoting"
->>>>>>> 49e184908a6e2fe98f591c9ddc391ffb7e8fea4d
 tutorial:
   id: "03-causality"
 output:
