@@ -24,7 +24,7 @@ library(ggplot2)
 library(dplyr)
 library(TPDtutor)
 library(tidyverse)
-library(gov50data)
+library(TPDdata)
 
 tutorial_options(exercise.checker = gradethis::grade_learnr)
 knitr::opts_chunk$set(echo = TRUE)
