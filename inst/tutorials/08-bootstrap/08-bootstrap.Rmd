@@ -57,21 +57,14 @@ Now you try to specify `hours` (number of hours worked in week before survey) as
 
 ```
 
-```{r gss-hours-solutions}
+```{r gss-hours-solution}
 gss |>
   specify(response = hours) 
 ```
+
 ```{r gss-hours-check}
 gradethis::grade_this_code()
 ```
-
-
-
-
-```{r rep_sample-check}
-grade_this_code()
-```
-
 
 ## Submit
 
