@@ -108,20 +108,20 @@ The `stat` argument specifies what type of statistics we are calculating and ca 
 
 Now, you try to perform these calculations for the `hours` variable:
 
-```{r gss-hours, exercise = TRUE}
+```{r gss-stat, exercise = TRUE}
 gss |>
   specify(response = hours) |>
   generate(reps = 100, type = "bootstrap")
 ```
 
-```{r gss-hours-solution}
+```{r gss-stat-solution}
 gss |>
   specify(response = hours) |>
   generate(reps = 100, type = "bootstrap") |>
   calculate(stat = "mean")
 ```
 
-```{r gss-hours-check}
+```{r gss-stat-check}
 gradethis::grade_this_code()
 ```
 
