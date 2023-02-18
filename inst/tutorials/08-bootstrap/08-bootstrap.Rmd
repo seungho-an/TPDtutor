@@ -66,6 +66,100 @@ gss |>
 gradethis::grade_this_code()
 ```
 
+### Generating bootstrap replications
+
+Once you have specified the response variable, `infer` can generate repeated samples with replacement from the data using the `generate()` function. These are the bootstrap samples. The code for this looks like:
+
+```{r}
+gss |>
+  specify(response = hours) |>
+  generate(reps = 100, type = "bootstrap")
+```
+
+Here we are explicitly stating that we want the bootstrap, but omitting the `type` argument in this case will still produce a bootstrap. You can think of this as similar to the `rep_slice_sample()` function with `replace = TRUE`. Now try to add this step to your own code for the `hours` variable using 100 repeated samples.
+
+```{r gss-genex, exercise = TRUE}
+gss |>
+  specify(response = hours) 
+```
+
+```{r gss-genex-solution}
+gss |>
+  specify(response = hours) |>
+  generate(reps = 100, type = "bootstrap")
+```
+
+```{r gss-genex-check}
+gradethis::grade_this_code()
+```
+
+### Calculating the summary statistics across bootstrap samples
+
+Next we can use the `calculate()` function to calculate a summary statistic in each of the repeated samples. This will basically recreate the `group_by` and `summarize` steps of a `dplyr` chain, but will prepare the result for easily obtaining confidence intervals. To implement this, use the following code:
+
+```{r}
+gss |>
+  specify(response = age) |>
+  generate(reps = 100, type = "bootstrap") |>
+  calculate(stat = "mean")
+```
+
+The `stat` argument specifies what type of statistics we are calculating and ca take on values like `"diff in means"`, and so on. Here we are interested in the mean. 
+
+Now, you try to perform these calculations for the `hours` variable:
+
+```{r gss-hours, exercise = TRUE}
+gss |>
+  specify(response = hours) |>
+  generate(reps = 100, type = "bootstrap")
+```
+
+```{r gss-hours-solution}
+gss |>
+  specify(response = hours) |>
+  generate(reps = 100, type = "bootstrap") |>
+  calculate(stat = "mean")
+```
+
+```{r gss-hours-check}
+gradethis::grade_this_code()
+```
+
+### Calculating confidence intervals
+
+Finally, you can get a confidence interval from the `infer` package by passing this whole chain to the `get_confidence_interval()` function:
+
+```{r}
+gss |>
+  specify(response = age) |>
+  generate(reps = 100, type="bootstrap") |>
+  calculate(stat = "mean") |>
+  get_confidence_interval(level = 0.95)
+```
+
+We explicitly are asking for a 95% confidence interval, but if we wanted a 90% confidence interval, we could specify `level = 0.9`.
+
+Now, you try! Finish your code here to get a 95% confidence interval for the mean of `hours`:
+
+```{r gss-ci, exercise = TRUE}
+gss |>
+  specify(response = hours) |>
+  generate(reps = 100, type = "bootstrap") |>
+  calculate(stat = "mean")
+```
+
+```{r gss-ci-solution}
+gss |>
+  specify(response = hours) |>
+  generate(reps = 100, type = "bootstrap") |>
+  calculate(stat = "mean")
+  get_confidence_interval(level = 0.95)
+```
+
+```{r gss-ci-check}
+gradethis::grade_this_code()
+```
+
 ## Submit
 
 ```{r context="setup", echo = FALSE}
