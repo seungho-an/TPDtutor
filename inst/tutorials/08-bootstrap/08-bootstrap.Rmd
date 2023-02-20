@@ -29,7 +29,7 @@ library(infer)
 
 tutorial_options(exercise.checker = gradethis::grade_learnr)
 knitr::opts_chunk$set(echo = TRUE)
-tut_reptitle <- "TPDstat Tutorial 7: Output Report"
+tut_reptitle <- "TPDstat Tutorial 8: Output Report"
 
 library(gapminder)
 ```
