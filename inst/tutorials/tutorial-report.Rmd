@@ -17,7 +17,7 @@ library(gov50tutor)
 checked_prop <- sum(params$output$checked) / length(params$output$checked)
 ```
 
-Congrats on getting through this tutorial! Please upload this PDF to Gradescope. 
+Congrats on getting through this tutorial!
 
 ## Tutorial progress:
 
