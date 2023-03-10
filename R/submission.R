@@ -26,7 +26,7 @@ submission_server <- function(input, output) {
       # case we don't have write permissions to the current working dir (which
       # can happen when deployed).
       tempReport <- file.path(tempdir(), "tutorial-report.Rmd")
-      tut_rep_path <- file.path(path.package("gov50tutor"),
+      tut_rep_path <- file.path(path.package("TPDtutor"),
                                 "tutorials",
                                 "tutorial-report.Rmd")
       file.copy(tut_rep_path, tempReport, overwrite = TRUE)
@@ -107,14 +107,13 @@ is_server_context <- function(.envir) {
 
 #' @rdname submission_functions
 #' @export
-#    shiny::tags$li("Upload this file to the appropriate assignment on Gradescope.")),
-
 submission_ui <- shiny::div(
   "When you have completed this tutorial, follow these steps:",
   shiny::tags$br(),
   shiny::tags$ol(
     shiny::tags$li("Enter your name into the text box below.."),
-    shiny::tags$li("Click the Download button next to generate a report PDF with a summary of your work."),
+    shiny::tags$li("Click the Download button next to generate a report PDF with a summary of your work. "),
+    shiny::tags$li("Upload this file to the appropriate assignment on Gradescope.")),
   shiny::textInput("name", "Your Name"),
   shiny::downloadButton(outputId = "download_pdf", label = "Download PDF"),
   shiny::downloadButton(outputId = "download_html", label = "Download HTML (backup)")
