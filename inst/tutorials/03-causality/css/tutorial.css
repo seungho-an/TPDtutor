@@ -29,7 +29,7 @@ p.caption {
 }
 
 .topicsContainer {
-    background-color: #135DD8;
+    background-color: #3498db;
 }
 
 header.topicsHeader > h1 {
@@ -84,7 +84,7 @@ header.topicsHeader > h1 {
 }
 
 .btn-primary, .btn-success, .btn-info {
-    background-color: #135DD8;
+    background-color: #3498db;
 }
 
 .tutorial-exercise-input .btn-xs,
