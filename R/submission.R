@@ -108,11 +108,12 @@ is_server_context <- function(.envir) {
 #' @rdname submission_functions
 #' @export
 submission_ui <- shiny::div(
-  "When you have completed this tutorial, follow these steps:",
+  "If you want a confirmation that you finished the tutorial, generate a PDF file following the instructions below:",
   shiny::tags$br(),
   shiny::tags$ol(
     shiny::tags$li("Enter your name into the text box below.."),
     shiny::tags$li("Click the Download button next to generate a report PDF with a summary of your work. "),
+    shiny::tags$li("Save it in your local system and enjoy your day!")),
   shiny::textInput("name", "Your Name"),
   shiny::downloadButton(outputId = "download_pdf", label = "Download PDF"),
   shiny::downloadButton(outputId = "download_html", label = "Download HTML (backup)")
