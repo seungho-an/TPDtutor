@@ -113,7 +113,7 @@ submission_ui <- shiny::div(
   shiny::tags$ol(
     shiny::tags$li("Enter your name into the text box below.."),
     shiny::tags$li("Click the Download button next to generate a report PDF with a summary of your work. "),
-    shiny::tags$li("Upload this file to the appropriate assignment on Gradescope.")),
+    shiny::tags$li("Good work!")),
   shiny::textInput("name", "Your Name"),
   shiny::downloadButton(outputId = "download_pdf", label = "Download PDF"),
   shiny::downloadButton(outputId = "download_html", label = "Download HTML (backup)")

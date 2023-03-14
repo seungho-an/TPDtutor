@@ -1,5 +1,4 @@
 ---
-title: "TPD Tutorial 3: Causality and Pivoting"
 title: "TPDstat Tutorial 3: Causality and Pivoting"
 tutorial:
   id: "03-causality"

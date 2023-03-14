@@ -27,7 +27,7 @@ library(nycflights13)
 flights <- flights |> filter(month == 6)
 tutorial_options(exercise.checker = gradethis::grade_learnr)
 knitr::opts_chunk$set(echo = TRUE)
-tut_reptitle <- "TPDstat Tutorial 2: Output Report"
+tut_reptitle <- "TPDstat Tutorial 3: Output Report"
 ```
 
 ## Nesting functions
